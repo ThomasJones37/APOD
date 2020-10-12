@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: black;
     font-family: sans-serif;
     color: white;
 }
@@ -25,7 +25,7 @@ header {
     line-height: 2rem;
 }
 
-header div {
+#subhead {
     font-size: 1rem;
     opacity: 75%;
 }
@@ -79,7 +79,9 @@ header div {
     opacity: 50%;
     
 }
-
+#zoom img:hover {
+    filter: drop-shadow(0 0 8px white);
+}
 .date_name {
     position: absolute;
     bottom: 2%;
@@ -96,6 +98,28 @@ header div {
     font-size: 0.75rem;
 }
 
+#link {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0; /* stretches it to full width & centers text !*/
+    bottom: 3%;
+    text-align: center;
+    font-size: 1rem;
+
+    visibility: hidden;
+    
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 5px wheat;
+}
+
+#link:hover {
+    text-shadow: 0 0 5px wheat;
+}
+#link.show {
+    visibility: visible;
+}
 
 @media screen and (min-width: 1200px) {
     #expl_box {
@@ -112,6 +136,8 @@ header div {
         font-size: 2rem;
         line-height: 2.5rem;
     }
-   
+   #link {
+       text-shadow: 0 0 0;
+   }
     
 }
