@@ -33,7 +33,7 @@ const displayData = data => {
 
     subhead.innerHTML = data.title;
 
-    img.src = data.hdurl;
+    img.src = data.url;
 
     zoom.href = data.hdurl;
 
@@ -46,7 +46,7 @@ const displayData = data => {
         
     } 
     if (data.copyright === undefined) {
-        copyright.textContent = 'No copyright';
+        copyright.textContent = '© ' + 'Nasa';
     }
     
 }
